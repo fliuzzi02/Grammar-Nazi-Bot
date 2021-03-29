@@ -1,12 +1,13 @@
-from spellchecker import SpellChecker
 from autocorrect import Speller
 
-spell = SpellChecker()
+def split(lst):
+    return (lst[0].split())
+
 
 def fun(phrase, lang):
     t = Speller(lang)
     print(phrase)
-    words = spell.split_words(phrase)
+    words = split(phrase)
     misspelled = []
 
     for word in words:
