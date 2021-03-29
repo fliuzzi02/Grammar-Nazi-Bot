@@ -3,7 +3,7 @@ import os
 from correction import fun
 
 #Bot Token
-token = 'ODI1MTAzMDg4NTc4ODU0OTUy.YF5DIQ.9yXudu4Nzy8X8HVnVtGRUMqOk9g'
+token = 'Insert token here'
 
 #About
 about = discord.Embed()
