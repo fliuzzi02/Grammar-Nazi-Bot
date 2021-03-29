@@ -1,10 +1,10 @@
 from spellchecker import SpellChecker
 from autocorrect import Speller
 
-t = Speller('it')
 spell = SpellChecker()
 
-def fun(phrase):
+def fun(phrase, lang):
+    t = Speller(lang)
     print(phrase)
     words = spell.split_words(phrase)
     misspelled = []
@@ -13,7 +13,7 @@ def fun(phrase):
         word.lower()
         corrected = t(word)
         if word == corrected:
-            #print("word is correct")
+            print("word is correct")
         else:
             print(word+" = "+corrected)
             misspelled.append(word)
