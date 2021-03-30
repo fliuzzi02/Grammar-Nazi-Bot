@@ -56,6 +56,11 @@ async def lang(ctx, arg):
     else:
         await ctx.channel.send("Selected language not supported")
 
+#When bot logs in
+@bot.event
+async def on_ready():
+    print(f'{bot.user.name} has connected to Discord!')
+
 #When messages are sent
 @bot.event
 async def on_message(message):
