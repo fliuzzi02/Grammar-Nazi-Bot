@@ -1,0 +1,4 @@
+# cat requirements.txt
+autocorrect==2.3.0
+discord==1.0.1
+discord.py==1.6.0
