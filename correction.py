@@ -1,13 +1,9 @@
 from autocorrect import Speller
 
-def split(lst):
-    return (lst[0].split())
-
-
 def fun(phrase, lang):
     t = Speller(lang)
     print(phrase)
-    words = split(phrase)
+    words = phrase.split()
     misspelled = []
 
     for word in words:
