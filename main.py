@@ -3,8 +3,9 @@ from discord.ext import commands
 import os
 from correction import fun
 
-#Bot Token
-token = 'token here'
+#Reads token from file
+with open('token.txt', 'r') as file:
+    token = file.read().replace('\n', '')
 
 #About
 about1 = discord.Embed()
